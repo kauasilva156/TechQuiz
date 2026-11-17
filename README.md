@@ -16,7 +16,7 @@ Fundamentos de tecnologia usados na própria página: HTML, CSS, JavaScript, `se
 
 - O quiz tem 12 perguntas e quatro alternativas em cada uma.
 - Só existe uma alternativa correta por pergunta.
-- A resposta vale depois do botão **Confirmar resposta**.
+- A resposta vale no Enter ou no clique da alternativa. Tab percorre as quatro opções.
 - Em seguida a página diz se a escolha está certa, explica o conteúdo e mostra a fonte.
 - Cada acerto vale um ponto.
 - O ranking guarda nome e pontuação no `sessionStorage` e continua disponível enquanto a aba estiver aberta.
@@ -26,7 +26,7 @@ Fundamentos de tecnologia usados na própria página: HTML, CSS, JavaScript, `se
 
 1. Abra o site publicado: https://kauasilva156.github.io/TechQuiz/
 2. Digite um nome com pelo menos 2 caracteres e escolha **Começar quiz**.
-3. Selecione uma alternativa com o mouse ou com o teclado (Tab chega no grupo; as setas trocam a opção) e confirme.
+3. Vá de uma alternativa a outra com Tab e responda com Enter. O clique do mouse também vale.
 4. Leia a explicação e, se quiser, abra a fonte em outra aba.
 5. Avance até a tela de resultado. A revisão lista cada pergunta, e o ranking ao lado mostra as partidas desta sessão.
 6. **Jogar de novo** inicia outra partida sem apagar o ranking.

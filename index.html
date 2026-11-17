@@ -26,7 +26,7 @@
       <ul>
         <li>Informe um nome para entrar no ranking da sessão.</li>
         <li>Cada pergunta tem quatro alternativas e apenas uma correta.</li>
-        <li>A escolha só vale depois de confirmar.</li>
+        <li>Use Tab para chegar na alternativa e Enter para responder.</li>
         <li>O ranking fica no <strong>sessionStorage</strong> e some quando a aba é fechada.</li>
       </ul>
 
@@ -40,24 +40,17 @@
       </form>
     </section>
 
-    <section id="tela-jogo" hidden aria-labelledby="enunciado">
-      <p id="progresso-texto" class="progresso-texto"></p>
-      <progress id="progresso" max="12" value="1">Pergunta 1</progress>
-
-      <form id="form-pergunta">
-        <fieldset>
-          <legend id="enunciado" tabindex="-1"></legend>
-          <div id="alternativas" class="alternativas"></div>
-          <p id="erro-alternativa" class="erro" role="alert"></p>
-          <button type="submit" id="botao-confirmar">Confirmar resposta</button>
-        </fieldset>
-      </form>
-
-      <div id="feedback" class="feedback" hidden>
-        <h2 id="feedback-titulo" tabindex="-1"></h2>
+    <section id="tela-jogo" class="painel-jogo" hidden aria-labelledby="enunciado">
+      <p id="progresso-texto" class="faixa-progresso" tabindex="-1"></p>
+      <h2 id="enunciado" class="cartao-pergunta" tabindex="-1"></h2>
+      <div id="alternativas" class="grade-opcoes" role="group" aria-labelledby="enunciado"></div>
+      <div id="feedback" class="faixa-feedback" hidden>
+        <p id="feedback-titulo" tabindex="-1"></p>
         <p id="feedback-texto"></p>
-        <p>Fonte: <a id="feedback-fonte" href="" target="_blank" rel="noopener noreferrer"></a></p>
-        <button type="button" id="botao-proxima">Próxima pergunta</button>
+        <p class="linha-fonte">Fonte: <a id="feedback-fonte" href="" target="_blank" rel="noopener noreferrer"></a></p>
+      </div>
+      <div class="acoes">
+        <button type="button" id="botao-proxima" class="botao-pill" hidden>Próxima</button>
       </div>
     </section>
 
