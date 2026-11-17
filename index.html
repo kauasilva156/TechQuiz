@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechQuiz — Fundamentos de tecnologia</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <img src="img/logo.svg" width="56" height="56" alt="Logo do TechQuiz: um ponto de interrogação dourado em um quadrado escuro">
+    <div class="topo-texto">
+      <p class="marca">TechQuiz</p>
+      <p class="subtitulo">Fundamentos de tecnologia</p>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section id="tela-inicio" aria-labelledby="titulo-inicio">
+      <h1 id="titulo-inicio">Quiz do grupo sobre tecnologia</h1>
+      <p>Doze perguntas, uma de cada vez. Depois de confirmar, o quiz mostra se a resposta está certa, explica o tema e abre a fonte.</p>
+
+      <h2>Regras</h2>
+      <ul>
+        <li>Informe um nome para entrar no ranking da sessão.</li>
+        <li>Cada pergunta tem quatro alternativas e apenas uma correta.</li>
+        <li>A escolha só vale depois de confirmar.</li>
+        <li>O ranking fica no <strong>sessionStorage</strong> e some quando a aba é fechada.</li>
+      </ul>
+
+      <form id="form-inicio">
+        <div class="campo">
+          <label for="nome">Seu nome</label>
+          <input id="nome" name="nome" type="text" maxlength="40" autocomplete="nickname" required aria-describedby="erro-nome">
+          <p id="erro-nome" class="erro" role="alert"></p>
+        </div>
+        <button type="submit">Começar quiz</button>
+      </form>
+    </section>
+
+    <section id="tela-jogo" hidden aria-labelledby="enunciado">
+      <p id="progresso-texto" class="progresso-texto"></p>
+      <progress id="progresso" max="12" value="1">Pergunta 1</progress>
+
+      <form id="form-pergunta">
+        <fieldset>
+          <legend id="enunciado" tabindex="-1"></legend>
+          <div id="alternativas" class="alternativas"></div>
+          <p id="erro-alternativa" class="erro" role="alert"></p>
+          <button type="submit" id="botao-confirmar">Confirmar resposta</button>
+        </fieldset>
+      </form>
+
+      <div id="feedback" class="feedback" hidden>
+        <h2 id="feedback-titulo" tabindex="-1"></h2>
+        <p id="feedback-texto"></p>
+        <p>Fonte: <a id="feedback-fonte" href="" target="_blank" rel="noopener noreferrer"></a></p>
+        <button type="button" id="botao-proxima">Próxima pergunta</button>
+      </div>
+    </section>
+
+    <section id="tela-resultado" hidden aria-labelledby="titulo-resultado">
+      <h1 id="titulo-resultado" tabindex="-1">Resultado</h1>
+      <p id="resumo-resultado"></p>
+      <h2>Revisão das respostas</h2>
+      <div id="revisao"></div>
+      <button type="button" id="botao-de-novo">Jogar de novo</button>
+    </section>
+
+    <aside aria-labelledby="titulo-ranking">
+      <h2 id="titulo-ranking">Ranking desta sessão</h2>
+      <p id="ranking-vazio">Nenhuma partida concluída nesta aba.</p>
+      <ol id="lista-ranking" class="ranking"></ol>
+    </aside>
+  </main>
+
+  <footer class="rodape">
+    <p>TechQuiz · entrega CP3 · site em <a href="https://kauasilva156.github.io/TechQuiz/">https://kauasilva156.github.io/TechQuiz/</a></p>
+  </footer>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>

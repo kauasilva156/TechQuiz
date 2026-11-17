@@ -1,0 +1,194 @@
+[
+  {
+    "id": 1,
+    "enunciado": "O que significa a sigla HTML?",
+    "alternativas": [
+      { "id": "a", "texto": "HyperText Markup Language" },
+      { "id": "b", "texto": "High Transfer Machine Language" },
+      { "id": "c", "texto": "Home Tool Markup Language" },
+      { "id": "d", "texto": "Hyperlink Text Management Language" }
+    ],
+    "correta": "a",
+    "explicacao": "HTML é a linguagem de marcação que organiza o conteúdo da página: títulos, parágrafos, links, imagens e regiões como cabeçalho e conteúdo principal.",
+    "fonte": {
+      "titulo": "MDN — Glossário: HTML",
+      "url": "https://developer.mozilla.org/pt-BR/docs/Glossary/HTML"
+    }
+  },
+  {
+    "id": 2,
+    "enunciado": "Qual é o papel do CSS em uma página web?",
+    "alternativas": [
+      { "id": "a", "texto": "Guardar o histórico de versões do projeto" },
+      { "id": "b", "texto": "Definir a apresentação visual da página" },
+      { "id": "c", "texto": "Criptografar a senha do usuário no servidor" },
+      { "id": "d", "texto": "Substituir o protocolo de rede do navegador" }
+    ],
+    "correta": "b",
+    "explicacao": "O CSS descreve como o conteúdo deve aparecer: cores, espaçamento, tipografia e a disposição dos blocos em cada tamanho de tela.",
+    "fonte": {
+      "titulo": "MDN — CSS",
+      "url": "https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+    }
+  },
+  {
+    "id": 3,
+    "enunciado": "Para que o JavaScript é usado no TechQuiz?",
+    "alternativas": [
+      { "id": "a", "texto": "Somente para trocar a cor de fundo" },
+      { "id": "b", "texto": "Para publicar o site no GitHub sem arquivos" },
+      { "id": "c", "texto": "Para controlar o fluxo do jogo e a interação da página" },
+      { "id": "d", "texto": "Para substituir o arquivo de perguntas" }
+    ],
+    "correta": "c",
+    "explicacao": "O JavaScript lê as perguntas, confere a resposta, mostra a explicação e atualiza a pontuação. É a camada de comportamento da página.",
+    "fonte": {
+      "titulo": "MDN — JavaScript",
+      "url": "https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+    }
+  },
+  {
+    "id": 4,
+    "enunciado": "Onde o ranking deste quiz fica salvo?",
+    "alternativas": [
+      { "id": "a", "texto": "Em um banco de dados permanente no servidor" },
+      { "id": "b", "texto": "Dentro do arquivo perguntas.json" },
+      { "id": "c", "texto": "No sessionStorage, enquanto a aba da sessão estiver aberta" },
+      { "id": "d", "texto": "No histórico de commits do Git" }
+    ],
+    "correta": "c",
+    "explicacao": "O sessionStorage guarda dados no navegador apenas durante a sessão da aba. Ao fechar a aba, o ranking desta partida deixa de existir.",
+    "fonte": {
+      "titulo": "MDN — Window.sessionStorage",
+      "url": "https://developer.mozilla.org/pt-BR/docs/Web/API/Window/sessionStorage"
+    }
+  },
+  {
+    "id": 5,
+    "enunciado": "Qual é a função do atributo alt em uma imagem?",
+    "alternativas": [
+      { "id": "a", "texto": "Aumentar a resolução do arquivo" },
+      { "id": "b", "texto": "Descrever a imagem quando ela não pode ser vista" },
+      { "id": "c", "texto": "Esconder a imagem em telas pequenas" },
+      { "id": "d", "texto": "Definir o tempo de carregamento da página" }
+    ],
+    "correta": "b",
+    "explicacao": "O texto alternativo é lido por leitores de tela e aparece quando a imagem não carrega. Ele deve dizer o que a imagem comunica, e não apenas o nome do arquivo.",
+    "fonte": {
+      "titulo": "MDN — Elemento img, atributo alt",
+      "url": "https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/img#alt"
+    }
+  },
+  {
+    "id": 6,
+    "enunciado": "O que o HTTPS acrescenta em relação ao HTTP?",
+    "alternativas": [
+      { "id": "a", "texto": "A conexão entre o navegador e o site passa a ser criptografada" },
+      { "id": "b", "texto": "A página deixa de precisar de HTML" },
+      { "id": "c", "texto": "O site fica automaticamente livre de qualquer erro de conteúdo" },
+      { "id": "d", "texto": "As imagens passam a dispensar texto alternativo" }
+    ],
+    "correta": "a",
+    "explicacao": "O HTTPS usa criptografia na comunicação. Por isso a entrega do quiz é publicada em um endereço https, e não em um link aberto sem proteção.",
+    "fonte": {
+      "titulo": "MDN — Glossário: HTTPS",
+      "url": "https://developer.mozilla.org/pt-BR/docs/Glossary/HTTPS"
+    }
+  },
+  {
+    "id": 7,
+    "enunciado": "O que caracteriza uma página responsiva?",
+    "alternativas": [
+      { "id": "a", "texto": "Ela só funciona em monitores acima de 1400 pixels" },
+      { "id": "b", "texto": "Ela exige rolagem horizontal no celular" },
+      { "id": "c", "texto": "O layout se adapta à largura da tela" },
+      { "id": "d", "texto": "Ela remove o teclado como forma de navegação" }
+    ],
+    "correta": "c",
+    "explicacao": "Um layout responsivo reorganiza colunas, botões e textos conforme a largura disponível, sem criar uma barra de rolagem horizontal.",
+    "fonte": {
+      "titulo": "MDN — Design responsivo",
+      "url": "https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Core/CSS_layout/Responsive_Design"
+    }
+  },
+  {
+    "id": 8,
+    "enunciado": "O que significa o código de estado HTTP 404?",
+    "alternativas": [
+      { "id": "a", "texto": "A requisição foi concluída com sucesso" },
+      { "id": "b", "texto": "O recurso pedido não foi encontrado" },
+      { "id": "c", "texto": "O servidor recusou a senha do usuário" },
+      { "id": "d", "texto": "A página foi movida de forma permanente" }
+    ],
+    "correta": "b",
+    "explicacao": "404 Not Found indica que o servidor não encontrou o endereço pedido. Um link de fonte quebrado, por exemplo, pode terminar nessa resposta.",
+    "fonte": {
+      "titulo": "MDN — HTTP 404 Not Found",
+      "url": "https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Reference/Status/404"
+    }
+  },
+  {
+    "id": 9,
+    "enunciado": "O que é phishing?",
+    "alternativas": [
+      { "id": "a", "texto": "Um formato de imagem usado na web" },
+      { "id": "b", "texto": "Uma cópia de segurança automática do navegador" },
+      { "id": "c", "texto": "Um golpe que imita um serviço confiável para roubar dados" },
+      { "id": "d", "texto": "Um comando do Git para enviar commits" }
+    ],
+    "correta": "c",
+    "explicacao": "No phishing, a pessoa recebe uma mensagem ou página falsa, parecida com um serviço conhecido, para entregar senha, código ou outros dados.",
+    "fonte": {
+      "titulo": "Wikipédia — Phishing",
+      "url": "https://pt.wikipedia.org/wiki/Phishing"
+    }
+  },
+  {
+    "id": 10,
+    "enunciado": "Como a autenticação em duas etapas protege uma conta?",
+    "alternativas": [
+      { "id": "a", "texto": "Publica a senha no README do projeto" },
+      { "id": "b", "texto": "Pede um segundo fator além da senha" },
+      { "id": "c", "texto": "Remove a necessidade de qualquer segredo" },
+      { "id": "d", "texto": "Substitui o cadeado do HTTPS" }
+    ],
+    "correta": "b",
+    "explicacao": "Além da senha, a conta pede algo que a pessoa tem ou confirma em outro canal, como um aplicativo autenticador. A senha sozinha deixa de ser suficiente.",
+    "fonte": {
+      "titulo": "Wikipédia — Autenticação de dois fatores",
+      "url": "https://pt.wikipedia.org/wiki/Autentica%C3%A7%C3%A3o_de_dois_fatores"
+    }
+  },
+  {
+    "id": 11,
+    "enunciado": "O que um repositório Git guarda?",
+    "alternativas": [
+      { "id": "a", "texto": "Os arquivos do projeto e o histórico das versões" },
+      { "id": "b", "texto": "Apenas a senha da conta do GitHub" },
+      { "id": "c", "texto": "A memória RAM usada pelo navegador" },
+      { "id": "d", "texto": "O ranking do quiz de todos os visitantes" }
+    ],
+    "correta": "a",
+    "explicacao": "O repositório registra os arquivos e cada alteração commitada. A tag cp3-entrega marca a versão que o grupo apresenta como entrega final.",
+    "fonte": {
+      "titulo": "Pro Git — Sobre controle de versão",
+      "url": "https://git-scm.com/book/pt-br/v2"
+    }
+  },
+  {
+    "id": 12,
+    "enunciado": "Por que o contraste entre texto e fundo importa?",
+    "alternativas": [
+      { "id": "a", "texto": "Porque deixa o teclado mais rápido" },
+      { "id": "b", "texto": "Porque impede o uso de CSS" },
+      { "id": "c", "texto": "Porque ajuda mais pessoas a lerem o conteúdo" },
+      { "id": "d", "texto": "Porque substitui o texto alternativo das imagens" }
+    ],
+    "correta": "c",
+    "explicacao": "Texto claro demais sobre um fundo claro, ou escuro demais sobre fundo escuro, some para parte das pessoas. O contraste mínimo é um critério de acessibilidade da WCAG.",
+    "fonte": {
+      "titulo": "W3C WAI — Contraste mínimo",
+      "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+    }
+  }
+]
